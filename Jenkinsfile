@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    kubernetes {
+    kubernetes3 {
       yamlFile 'podtemplate.yaml'
     }
   }
