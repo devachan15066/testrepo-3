@@ -1,7 +1,6 @@
 pipeline {
     agent {
-        kubernetes {
-            withCredentials([azureServicePrincipal('serviceprincipal_secret_text')]) {
+        kubernetes{
                 yamlFile 'podtemplate.yaml'
             }
         }
